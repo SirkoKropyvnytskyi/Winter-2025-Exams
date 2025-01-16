@@ -6,9 +6,9 @@ const sum = function (array = []) {
   let results = [0];
 
   for (const item of array) {
-    if (typeof item === 'number') {
-      const newSum = results[results.length - 1] + item;
-      results.push(newSum); 
+    if (typeof item === 'number' && Number.isFinite(item)) {
+      const newSum = results[results.length - 1] + item;  
+      results.push(newSum);  
     }
   }
 
