@@ -1,5 +1,6 @@
 // Refactor following solution
 // Sum all number values in dict
+'use strict';
 
 const count = (obj) => {
   return Object.values(obj).reduce((sum, value) => {
