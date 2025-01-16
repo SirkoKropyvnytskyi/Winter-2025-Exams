@@ -3,16 +3,15 @@
 'use strict'
 
 const sum = function (array = []) {
-  let results = [0];
+  let result = 0;
 
   for (const item of array) {
     if (typeof item === 'number' && Number.isFinite(item)) {
-      const newSum = results[results.length - 1] + item;  
-      results.push(newSum);  
+      result += item;
     }
   }
 
-  return results[results.length - 1];  
+  return result;
 };
 
 module.exports = sum;
